@@ -1,0 +1,68 @@
+body {
+  font-family: 'Archivo Black', sans-serif;
+  background-color: #393426;
+  color: #ffffff;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #393426;
+  text-align: center;
+}
+
+header img {
+  border-radius: 50%;
+}
+
+nav link {
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+footer {
+  font-size: 0.8em;
+  color: #555;
+  margin-top: 40px;
+}
+ul {
+  list-style: none; 
+  padding-left: 0;  
+  text-align: center; 
+}
+a {
+  color: #c2c2ab;
+}
+
+.about-me {
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px 0;
+  box-sizing: border-box;
+  width: calc(50% - 20px);
+}
+#expertise {
+  background-color: #DDE0E3; 
+  border: 1px solid #5c6e80;
+}
+#qualities {
+  background-color: #DDE0E3; 
+  border: 1px solid #6c9ecf;
+}
+.edu-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.edu-item {
+  background-color: #DDE0E3; 
+  border: 1px solid #5c6e80;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
