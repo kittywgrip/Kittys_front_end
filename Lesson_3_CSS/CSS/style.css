@@ -38,21 +38,6 @@ a {
   color: #c2c2ab;
 }
 
-.about-me {
-  display: inline-block;
-  vertical-align: top;
-  margin: 20px 0;
-  box-sizing: border-box;
-  width: calc(50% - 20px);
-}
-#expertise {
-  background-color: #DDE0E3; 
-  border: 1px solid #5c6e80;
-}
-#qualities {
-  background-color: #DDE0E3; 
-  border: 1px solid #6c9ecf;
-}
 .edu-container {
   display: flex;
   gap: 20px;
@@ -65,4 +50,21 @@ a {
   padding: 20px;
   flex: 1 1 calc(33.333% - 20px);
   box-sizing: border-box;
+}
+
+#expertise {
+  background-color: #DDE0E3; 
+ height: 25%;
+  width: 25%;
+  padding: 50px;
+  border: 1px solid #5d6063;
+  display: inline-block;
+}
+#qualities {
+  background-color: #DDE0E3; 
+ height: 25%;
+  width: 25%;
+  padding: 50px;
+  border: 1px solid #5d6063;
+  display: inline-block;
 }
