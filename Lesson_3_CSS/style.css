@@ -52,19 +52,16 @@ a {
   box-sizing: border-box;
 }
 
-#expertise {
+
+.qualities {
   background-color: #DDE0E3; 
- height: 25%;
-  width: 25%;
-  padding: 50px;
-  border: 1px solid #5d6063;
-  display: inline-block;
+  padding: 10px;
+  border: 1px #03070b;
+  display: block;
 }
-#qualities {
+.expertise {
   background-color: #DDE0E3; 
- height: 25%;
-  width: 25%;
-  padding: 50px;
-  border: 1px solid #5d6063;
-  display: inline-block;
+  padding: 10px;
+  border: 1px #03070b;
+  display: block;
 }
