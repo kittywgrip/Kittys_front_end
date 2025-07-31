@@ -1,0 +1,60 @@
+.page_wrapper    {
+color: white;
+}
+.forecast_wrapper {
+width: 100%;
+max-width: 1170px;
+height: 592px;
+font-size: 0;
+}
+.item {
+display: inline-block;
+color: beige;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+border: 2px solid white;
+padding-top: 26px;
+padding-bottom: 27px;
+text-align: center;
+width: 25%;
+}
+.w-50 {
+width: 50%;
+}      
+.w-100 {
+width: 100%;    
+}
+
+#lisbon {
+background-color: #3399CC;
+}
+#paris {
+background-color: #33CCCC;
+}
+#belgrade {
+background-color: #996699;
+}   
+#venice {
+background-color: #C24747;  
+}
+#tel-avive {
+background-color: #E2674A;
+}
+#cair {
+background-color: #FFCC66;
+}
+#new-york {
+background-color: #99CC99;
+}
+#new-delhi {
+background-color: #669999;
+}
+#san-francisco {
+background-color: #CC6699;  
+}
+#tokyo {
+background-color: #339966;
+}   
+#sydney {
+background-color: #666699;  
+}
