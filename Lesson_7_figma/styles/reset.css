@@ -1,0 +1,14 @@
+ul, ol {
+list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+buttun, input, textarea {
+    outline: none;
+    border: none
+}
