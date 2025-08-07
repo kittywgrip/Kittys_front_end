@@ -8,7 +8,7 @@ a {
     color: inherit;
 }
 
-buttun, input, textarea {
+button, input, textarea {
     outline: none;
     border: none
 }
