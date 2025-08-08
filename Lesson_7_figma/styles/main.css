@@ -258,7 +258,7 @@ margin-bottom:22px;
 margin-bottom: 0;
 }
 
-.product .container {
+.product .container .row {
     display:flex;
     max-width: 1121px;
     width: 100%;
