@@ -16,10 +16,6 @@ body {
     font-family:"Poppins", sans-serif;
 }
 
-img {
-    width: 100%;
-}
-
 .container {
     width: 100%;
     max-width: 1126px;
@@ -100,6 +96,7 @@ margin-right: 0;
 
 .hero_image {
     max-width: 605px;
+    width: 100%;
     margin-top: 30px;
 }
 
@@ -119,9 +116,7 @@ margin-right: 0;
 .hero_description {
     font-size: 18px;
     line-height: 28px;
-    width: 100%;
     max-width: 458px;
-    padding-bottom: 45px;
 }
 
 
@@ -135,24 +130,27 @@ padding: none;
 }
 
 .hero_actions {
-
+    display: flex;
+    margin-top: -160px;
 }
 
 .feature_section   {
+    display: inline-block;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 159px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .feature_title {
-text-align: center;
-margin-left: auto;
-margin-right: auto;
+display: flex;
+justify-content: center;
+margin-left: 845px;
+margin-right: 827px;
 font-size: 36px;
 line-height: auto;
 color: var(--heading-color);
+text-align: center;
 width: 100%;
 max-width: 539px;
 }
@@ -167,6 +165,10 @@ max-width: 539px;
 
 .card {
   flex: 1 1 200px;         /* varje kort kan växa och krympa, minbredd 200px */
+}
+
+.card_img {
+margin-bottom:30px;
 }
 
 .card > h3 {
@@ -237,11 +239,12 @@ margin-bottom:22px;
 }
 
 .design_image {
+    width: 100%;
     max-width: 519px;
 }
 
 .design_description {
-    padding-bottom:12px;
+    margin-bottom:12px;
 }
 .design_txt0 {
     margin-bottom: 30px;
@@ -262,6 +265,8 @@ margin-bottom: 0;
 }
 
 .product_text{
+margin-top: 71px;
+margin-left: 779px;
 width: 100%;
 max-width: 486px;
 }
@@ -278,6 +283,7 @@ margin-bottom:22px;
 }
 
 .product_image {
+    width: 100%;
     max-width: 519px;
 }
 
@@ -294,37 +300,4 @@ margin-bottom:22px;
 
 .product_txt1:last-of-type {
 margin-bottom: 0;
-}
-
-.card_purple {
-display: flex;
-background-color: #7752BE;
-width: 50px;
-height: 50px;
-align-items: center;
-justify-content: center;
-}
-
-.card_yellow {
-background-color: #FAB005;
-width: 50px;
-height: 50px;
-}
-
-.card_red {
-background-color: #F03E3D;
-width: 50px;
-height: 50px;
-}
-
-.card_blue {
-background-color: #4DADF7;
-width: 50px;
-height: 50px;
-}
-
-.icons {
-max-width: 12px;
-height: auto;
-
 }
