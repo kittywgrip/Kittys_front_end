@@ -47,7 +47,7 @@ margin-right: 0;
     border-radius: 4px;
     padding: 11px 25px;
     cursor: pointer;
-    border: 1px
+    border: 1px;
 }
 
 .button:hover {
@@ -427,16 +427,21 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
+font-size: 16px;
+font-weight: 400;
+line-height: 35px;
+margin-bottom: 83px;
 }
 
 .footer_section img{
 width: 100%;
 max-width: 185px;
 height: auto;
+padding-top: 102px;
+padding-bottom: 173px;
 }
 
 .footerlist_1{
-display: list-item;
 width: 100%;
 max-width: 100px;
 height: auto;
@@ -444,14 +449,39 @@ padding-top: 140px;
 
 }
 .footerlist_2{
-display: list-item;
 width: 100%;
 max-width: 132px;
 height: auto;
 padding-top: 140px;
 }
 
+.signup-form {
+width: 100%;
+max-width: 325px;
+}
+
+input {
+width: 100%;
+max-width: 325px;
+height: 48px;
+border: 1px solid;
+border-color: var(--light-blue); 
+text-decoration: none;
+margin-top: 193px;
+margin-bottom: 21px;
+}
 
 
+
+.signup {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--accent-color);
+    color: white;   
+    text-transform: capitalize;
+    border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
 
 
