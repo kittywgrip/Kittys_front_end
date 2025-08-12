@@ -16,6 +16,10 @@ body {
     font-family:"Poppins", sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 .container {
     width: 100%;
     max-width: 1126px;
@@ -43,7 +47,7 @@ margin-right: 0;
     border-radius: 4px;
     padding: 11px 25px;
     cursor: pointer;
-    border: 1px
+    border: 1px;
 }
 
 .button:hover {
@@ -96,7 +100,6 @@ margin-right: 0;
 
 .hero_image {
     max-width: 605px;
-    width: 100%;
     margin-top: 30px;
 }
 
@@ -116,13 +119,39 @@ margin-right: 0;
 .hero_description {
     font-size: 18px;
     line-height: 28px;
+    width: 100%;
     max-width: 458px;
+    padding-bottom: 45px;
+}
+
+.hero_actions {
+display: flex;
+align-items: center;
+gap: 30px;
+
+
+}
+.watch_video {
+display: flex;
+align-items: center;
+gap: 8px;
+color: var(--accent-color);
+font-size: 16px;
+font-weight: 600;
+text-decoration: underline;
+cursor: pointer;
+}
+
+.watch_video:hover {
+    background-color: transparent;
+    color: #173A56;
+    border: 1px solid var(--light-blue);
 }
 
 
-.watch_video {
-background-color: transparent;
-margin-left: 20px
+.play_image {
+width: 20px;
+height: auto;
 }
 
 .hero_button, .watch_video {
@@ -130,27 +159,24 @@ padding: none;
 }
 
 .hero_actions {
-    display: flex;
-    margin-top: -160px;
+color: #173A56;
 }
 
 .feature_section   {
-    display: inline-block;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     margin-top: 159px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .feature_title {
-display: flex;
-justify-content: center;
-margin-left: 845px;
-margin-right: 827px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
 font-size: 36px;
 line-height: auto;
 color: var(--heading-color);
-text-align: center;
 width: 100%;
 max-width: 539px;
 }
@@ -167,16 +193,78 @@ max-width: 539px;
   flex: 1 1 200px;         /* varje kort kan växa och krympa, minbredd 200px */
 }
 
-.card_img {
-margin-bottom:30px;
-}
-
 .card > h3 {
     font-size: 22px;
     line-height: auto;
     color: var(--heading-color);
     margin-bottom: 13px;
 }
+
+.card_purple {
+display: flex;
+background-color: #7752BE;
+width: 50px;
+height: 50px;
+align-items: center;
+justify-content: center;
+margin-bottom: 30px;
+border-radius: 19px;
+}
+
+.card_yellow {
+display: flex;
+background-color: #FAB005;
+width: 50px;
+height: 50px;
+align-items: center;
+justify-content: center;
+margin-bottom: 30px;
+border-radius: 19px;
+}
+
+.card_red {
+background-color: #F03E3D;
+width: 50px;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 30px;
+border-radius: 19px;
+}
+
+.card_blue {
+background-color: #4DADF7;
+width: 50px;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 30px;
+border-radius: 19px;
+}
+
+.klicker {
+max-width: 12px;
+height: auto;
+
+}
+
+.octopus {
+    max-width: 18px;
+    height: auto;
+}
+
+.heart {
+    max-width: 16px;
+    height: auto;
+}
+
+.hourglass {
+    max-width: 14px;
+    height: auto;
+}
+
 p {
     font-size: 16px;
     line-height: auto;
@@ -212,13 +300,13 @@ p {
     border-color: transparent
 }
 
-.design .container {
+.design .container, .product .container {
     display:inline-flex;
     max-width: 518px;
     width: 100%;
 }
 
-.design_text{
+.design_text, .marketer_text{
 text-align: left;
 margin: none;
 margin-top: 71px;
@@ -227,11 +315,11 @@ max-width: 486px;
 margin-bottom: 101px;
 }
 
-.design_p {
+.design_p, .marketer_p {
 margin-bottom: 2px;
 
     }
-.design_title {
+.design_title, .marketer_title {
 font-size: 36px;
 font-weight: bold;
 line-height: auto;
@@ -239,34 +327,31 @@ margin-bottom:22px;
 }
 
 .design_image {
-    width: 100%;
     max-width: 519px;
 }
 
-.design_description {
-    margin-bottom:12px;
+.design_description, .marketer_description {
+    padding-bottom:12px;
 }
-.design_txt0 {
+.design_txt0, .marketer_txt0 {
     margin-bottom: 30px;
 }
 
-.design_txt1 {
+.design_txt1, .marketer_txt1 {
     margin-bottom: 25px;
 }
 
-.design_txt1:last-of-type {
+.design_txt1:last-of-type, .marketer_txt1:last-of-type {
 margin-bottom: 0;
 }
 
-.product .container .row {
+.product .container .row{
     display:flex;
     max-width: 1121px;
     width: 100%;
 }
 
 .product_text{
-margin-top: 71px;
-margin-left: 779px;
 width: 100%;
 max-width: 486px;
 }
@@ -283,7 +368,6 @@ margin-bottom:22px;
 }
 
 .product_image {
-    width: 100%;
     max-width: 519px;
 }
 
@@ -301,3 +385,103 @@ margin-bottom:22px;
 .product_txt1:last-of-type {
 margin-bottom: 0;
 }
+
+
+.checkmark {
+    max-width: 16px;
+    height: auto;
+}
+
+ul li {
+  display: flex;         /* gör att rutan och texten ligger bredvid varandra */
+  align-items: center;   /* centrerar dem vertikalt */
+  gap: 30px;             /* avstånd mellan rutan och texten */
+  margin-bottom: 30px;    /* avstånd mellan raderna */
+}
+
+.checkbox {
+  display: flex;
+  background-color: var(--accent-color);
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  flex-shrink: 0; /* förhindrar att rutan krymper om texten är lång */
+}
+
+.checkline1 {
+width: 100%;
+max-width: 430px;
+}
+.checkline2, .checkline3 {
+width: 100%;
+max-width: 450px;
+}
+
+.footer_section {
+width: 100%;
+max-width: 1126px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+font-size: 16px;
+font-weight: 400;
+line-height: 35px;
+margin-bottom: 83px;
+}
+
+.footer_section img{
+width: 100%;
+max-width: 185px;
+height: auto;
+padding-top: 102px;
+padding-bottom: 173px;
+}
+
+.footerlist_1{
+width: 100%;
+max-width: 100px;
+height: auto;
+padding-top: 140px;
+
+}
+.footerlist_2{
+width: 100%;
+max-width: 132px;
+height: auto;
+padding-top: 140px;
+}
+
+.signup-form {
+width: 100%;
+max-width: 325px;
+}
+
+input {
+width: 100%;
+max-width: 325px;
+height: 48px;
+border: 1px solid;
+border-color: var(--light-blue); 
+text-decoration: none;
+margin-top: 193px;
+margin-bottom: 21px;
+}
+
+
+
+.signup {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--accent-color);
+    color: white;   
+    text-transform: capitalize;
+    border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+
