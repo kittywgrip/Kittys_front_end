@@ -128,9 +128,8 @@ margin-right: 0;
 display: flex;
 align-items: center;
 gap: 30px;
-
-
 }
+
 .watch_video {
 display: flex;
 align-items: center;
@@ -200,69 +199,58 @@ max-width: 539px;
     margin-bottom: 13px;
 }
 
-.card_purple {
-display: flex;
+
+[class^= "card_"] {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 19px;
+}
+
+.card_purple { 
+
 background-color: #7752BE;
-width: 50px;
-height: 50px;
-align-items: center;
-justify-content: center;
-margin-bottom: 30px;
-border-radius: 19px;
+
 }
 
 .card_yellow {
-display: flex;
+
 background-color: #FAB005;
-width: 50px;
-height: 50px;
-align-items: center;
-justify-content: center;
-margin-bottom: 30px;
-border-radius: 19px;
+
 }
 
 .card_red {
 background-color: #F03E3D;
-width: 50px;
-height: 50px;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-bottom: 30px;
-border-radius: 19px;
+
 }
 
 .card_blue {
 background-color: #4DADF7;
-width: 50px;
-height: 50px;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-bottom: 30px;
-border-radius: 19px;
 }
 
-.klicker {
+[class^=card-] img{
+    height: auto;
+}
+
+.card-klicker {
 max-width: 12px;
-height: auto;
 
 }
 
-.octopus {
+.card-octopus {
     max-width: 18px;
     height: auto;
 }
 
-.heart {
+.card-heart {
     max-width: 16px;
-    height: auto;
 }
 
-.hourglass {
+.card-hourglass {
     max-width: 14px;
-    height: auto;
 }
 
 p {
@@ -285,13 +273,13 @@ p {
     font-weight: bold;
     line-height: auto;
     color: white;
-    color: white;
     margin-top: 34px;
     margin-bottom: 90px;
     padding: 15px 32px;
     border-radius: 4px;
     cursor: pointer;
     border: 1px solid transparent;
+    width: auto;
 }
 
 .card_button:hover{
@@ -306,7 +294,7 @@ p {
     width: 100%;
 }
 
-.design_text, .marketer_text{
+[class$= "text_"]{
 text-align: left;
 margin: none;
 margin-top: 71px;
@@ -315,11 +303,12 @@ max-width: 486px;
 margin-bottom: 101px;
 }
 
-.design_p, .marketer_p {
-margin-bottom: 2px;
+[class$= "_p"]  {
+    margin-bottom: 2px;
+}
 
-    }
-.design_title, .marketer_title {
+
+[class$= "title_"] {
 font-size: 36px;
 font-weight: bold;
 line-height: auto;
@@ -376,14 +365,6 @@ margin-bottom:22px;
 }
 .product_txt0 {
     margin-bottom: 30px;
-}
-
-.product_txt1 {
-    margin-bottom: 25px;
-}
-
-.product_txt1:last-of-type {
-margin-bottom: 0;
 }
 
 
