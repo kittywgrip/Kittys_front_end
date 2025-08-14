@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: none;
@@ -341,13 +340,9 @@ img:not(.play_image) {
 
 ul li {
   display: flex;
-  /* gör att rutan och texten ligger bredvid varandra */
   align-items: center;
-  /* centrerar dem vertikalt */
   gap: 30px;
-  /* avstånd mellan rutan och texten */
   margin-bottom: 30px;
-  /* avstånd mellan raderna */
 }
 
 .checkbox {
@@ -359,7 +354,6 @@ ul li {
   justify-content: center;
   border-radius: 14px;
   flex-shrink: 0;
-  /* förhindrar att rutan krymper om texten är lång */
 }
 
 .checkline1 {
